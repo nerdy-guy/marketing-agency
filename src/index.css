@@ -1,0 +1,11 @@
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px !important ;
+}
+
+@media (max-width: 48rem) {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    display: none;
+  }
+}
