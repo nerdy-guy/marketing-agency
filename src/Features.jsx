@@ -1,12 +1,4 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Img,
-  SimpleGrid,
-  Text,
-  useColorModeValue as mode,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Img, SimpleGrid, Text } from "@chakra-ui/react";
 import { HiOutlineDesktopComputer, HiOutlineMail } from "react-icons/hi";
 import {
   HiOutlineBanknotes,
@@ -30,7 +22,7 @@ const FeatureImage = (props) => (
 
 const Features = () => {
   return (
-    <Box as="section" bg={mode("gray.50", "gray.800")} py="24">
+    <Box as="section" bg="gray.800" py="24">
       <Box
         maxW={{
           base: "xl",
@@ -63,18 +55,15 @@ const Features = () => {
                 lineHeight="shorter"
                 size="2xl"
                 letterSpacing="tight"
-                color={mode("gray.900", "white")}
+                color="white"
                 fontWeight="extrabold"
               >
-                Our — <br />
-                <Box as="span" color={mode("blue.600", "blue.400")}>
-                  Services
-                </Box>
+                Our Services <br />
               </Heading>
               <Text
                 mt="4"
                 fontSize="2xl"
-                color={mode("gray.600", "gray.400")}
+                color="gray.400"
                 maxW={{
                   lg: "md",
                 }}
@@ -111,7 +100,7 @@ const Features = () => {
                 amet sapien.
               </Feature>
               <Feature title="Paid Advertising" icon={<HiOutlineBanknotes />}>
-                iaculis porttitor mauris. Vivamus interdum tortor libero.
+                Iaculis porttitor mauris. Vivamus interdum tortor libero.
               </Feature>
               <Feature
                 title="SEO Optimization"

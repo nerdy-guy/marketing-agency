@@ -3,7 +3,7 @@ import { StatCard } from "./StatCard";
 
 const Stats = () => {
   return (
-    <Box as="section" pb="20">
+    <Box as="section" pb="20" bg="gray.800">
       <Box bg="blue.600" pt="20" pb="20">
         <Box
           maxW={{

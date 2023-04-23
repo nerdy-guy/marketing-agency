@@ -2,7 +2,7 @@ import { ButtonGroup, IconButton } from "@chakra-ui/react";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export const SocialMediaLinks = (props) => (
-  <ButtonGroup variant="ghost" color="gray.600" {...props}>
+  <ButtonGroup variant="link" color="gray.600" {...props}>
     <IconButton
       as="a"
       href="#"

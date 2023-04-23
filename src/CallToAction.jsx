@@ -2,7 +2,7 @@ import { Box, Button, Heading, Stack, Text } from "@chakra-ui/react";
 
 const CallToAction = () => {
   return (
-    <Box mt="16" as="section" bg="blue.600">
+    <Box as="section" bg="blue.600">
       <Box
         maxW="3xl"
         mx="auto"
@@ -26,10 +26,11 @@ const CallToAction = () => {
           fontWeight="extrabold"
           letterSpacing="tight"
           lineHeight="1.2"
+          color="blackAlpha.900"
         >
           Transform Your Brand with Us{" "}
         </Heading>
-        <Text fontSize="lg" maxW="xl" mx="auto">
+        <Text fontSize="lg" maxW="xl" mx="auto" color="blackAlpha.900">
           Boost Your Business with Results-Driven Marketing Solutions: Your
           Trusted Partner for Online Success
         </Text>
@@ -53,7 +54,7 @@ const CallToAction = () => {
             size="lg"
             h="14"
             px="10"
-            colorScheme="blue"
+            variant="solid"
             fontWeight="bold"
             flex={{
               md: "1",

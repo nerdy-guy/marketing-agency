@@ -1,25 +1,18 @@
-import {
-  Box,
-  Flex,
-  HStack,
-  Heading,
-  Text,
-  useColorModeValue as mode,
-} from "@chakra-ui/react";
+import { Box, Flex, HStack, Heading, Text } from "@chakra-ui/react";
 import { Quotee } from "./Quotee";
 import { QuoteIcon } from "./QuoteIcon";
 
 const Testimonials = ({ name, jobTitle, imageSrc }) => (
-  <Box as="section" bg={mode("gray.50", "gray.800")} mt="16">
+  <Box as="section" bg="gray.800" pt="16" className="test">
     <Heading
       lineHeight="shorter"
       size="2xl"
       letterSpacing="tight"
-      color={mode("gray.900", "white")}
+      color="white"
       fontWeight="extrabold"
       textAlign="center"
     >
-      See what our clients say
+      What our clients say
     </Heading>
     <Box
       maxW="3xl"
@@ -33,7 +26,7 @@ const Testimonials = ({ name, jobTitle, imageSrc }) => (
     >
       <Flex direction="column" align="center" textAlign="center">
         <QuoteIcon
-          color={mode("gray.300", "gray.600")}
+          color="gray.600"
           fontSize={{
             base: "3xl",
             md: "6xl",
@@ -46,6 +39,7 @@ const Testimonials = ({ name, jobTitle, imageSrc }) => (
           }}
           fontWeight="medium"
           mt="6"
+          color="gray.400"
         >
           &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
           malesuada ante id orci elementum pretium. Donec ut nunc non sapien
@@ -53,12 +47,7 @@ const Testimonials = ({ name, jobTitle, imageSrc }) => (
         </Text>
         <Quotee name={name} jobTitle={jobTitle} imageSrc={imageSrc} mt="8" />
       </Flex>
-      <HStack
-        justify="center"
-        spacing="4"
-        mt="8"
-        color={mode("gray.300", "gray.600")}
-      ></HStack>
+      <HStack justify="center" spacing="4" mt="8" color="gray.600"></HStack>
     </Box>
   </Box>
 );

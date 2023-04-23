@@ -1,14 +1,9 @@
-import { Box, Flex, useColorModeValue, VisuallyHidden } from "@chakra-ui/react";
+import { Box, Flex, VisuallyHidden } from "@chakra-ui/react";
 import { NavContent } from "./NavContent";
 
 const Navbar = () => (
   <Box>
-    <Box
-      as="header"
-      height="16"
-      bg={useColorModeValue("white", "gray.800")}
-      position="relative"
-    >
+    <Box as="header" height="16" bg="gray.800" position="relative">
       <Box
         height="100%"
         maxW="7xl"
@@ -29,7 +24,7 @@ const Navbar = () => (
           justify="space-between"
           height="100%"
         >
-          <Box as="a" href="#" rel="home">
+          <Box as="a" href="#" rel="home" color="white">
             <VisuallyHidden>Marketing Agency</VisuallyHidden>
             Logo
           </Box>

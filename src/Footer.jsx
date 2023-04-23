@@ -9,11 +9,11 @@ const Footer = () => (
     as="footer"
     role="contentinfo"
     mx="auto"
-    maxW="7xl"
+    bg="gray.800"
     py="12"
     px={{
       base: "4",
-      md: "8",
+      md: "44",
     }}
   >
     <Stack spacing="10" divider={<StackDivider />}>
@@ -27,7 +27,9 @@ const Footer = () => (
           lg: "28",
         }}
       >
-        <Box flex="1">Logo</Box>
+        <Box flex="1" color="white">
+          Logo
+        </Box>
         <Stack
           direction={{
             base: "column",

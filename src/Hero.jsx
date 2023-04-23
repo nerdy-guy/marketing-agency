@@ -1,18 +1,10 @@
-import {
-  Box,
-  Button,
-  Heading,
-  Img,
-  Stack,
-  Text,
-  useColorModeValue as mode,
-} from "@chakra-ui/react";
+import { Box, Button, Heading, Img, Stack, Text } from "@chakra-ui/react";
 
 import hero from "./assets/hero.svg";
 
 const Hero = () => {
   return (
-    <Box as="section" bg={mode("gray.50", "gray.800")} pt="20" pb="24">
+    <Box as="section" bg="gray.800" pt="20" pb="24">
       <Box
         maxW={{
           base: "xl",
@@ -48,19 +40,14 @@ const Hero = () => {
             <Heading
               as="h1"
               size="3xl"
-              color={mode("blue.600", "blue.300")}
+              color="blue.300"
               mt="8"
               fontWeight="extrabold"
               letterSpacing="tight"
             >
               Stay ahead of the curve
             </Heading>
-            <Text
-              color={mode("gray.600", "gray.400")}
-              mt="4"
-              fontSize="lg"
-              fontWeight="medium"
-            >
+            <Text color="gray.400" mt="4" fontSize="lg" fontWeight="medium">
               Drive more traffic to your website by improving your search engine
               rankings
             </Text>
@@ -86,7 +73,8 @@ const Hero = () => {
                 height="14"
                 px="8"
                 shadow="base"
-                variant="outline"
+                variant="solid"
+                color="black"
               >
                 Learn More
               </Button>

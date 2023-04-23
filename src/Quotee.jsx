@@ -13,10 +13,10 @@ export const Quotee = (props) => {
         rounded="full"
       />
       <Box mt="3">
-        <Text as="cite" fontStyle="normal" fontWeight="bold">
+        <Text as="cite" fontStyle="normal" fontWeight="bold" color="white">
           {name}
         </Text>
-        <Text fontSize="sm" color="gray.500">
+        <Text fontSize="sm" color="gray.400">
           {jobTitle}
         </Text>
       </Box>

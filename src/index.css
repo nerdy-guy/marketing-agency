@@ -1,6 +1,10 @@
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 30px !important ;
+  font-size: 30px !important;
+}
+
+.swiper-viewport {
+  background-color: transparent !important;
 }
 
 @media (max-width: 48rem) {
@@ -8,4 +12,7 @@
   .swiper-button-next::after {
     display: none;
   }
+}
+.swiper {
+  background-color: #1a202c !important;
 }
