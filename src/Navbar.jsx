@@ -1,5 +1,6 @@
 import { Box, Flex, VisuallyHidden } from "@chakra-ui/react";
 import { NavContent } from "./NavContent";
+import { MdOutlineShowChart } from "react-icons/md";
 
 const Navbar = () => (
   <Box>
@@ -24,9 +25,9 @@ const Navbar = () => (
           justify="space-between"
           height="100%"
         >
-          <Box as="a" href="#" rel="home" color="white">
+          <Box as="a" href="#" rel="home" color="blue.600" fontSize="5xl">
             <VisuallyHidden>Marketing Agency</VisuallyHidden>
-            Logo
+            <MdOutlineShowChart />
           </Box>
           <NavContent.Desktop
             display={{

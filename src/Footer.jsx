@@ -3,6 +3,7 @@ import { Copyright } from "./Copyright";
 import { LinkGrid } from "./LinkGrid";
 import { SocialMediaLinks } from "./SocialMediaLinks";
 import { SubscribeForm } from "./SubscribeForm";
+import { MdOutlineShowChart } from "react-icons/md";
 
 const Footer = () => (
   <Box
@@ -27,8 +28,8 @@ const Footer = () => (
           lg: "28",
         }}
       >
-        <Box flex="1" color="white">
-          Logo
+        <Box flex="1" color="blue.600" fontSize="5xl">
+          <MdOutlineShowChart />
         </Box>
         <Stack
           direction={{

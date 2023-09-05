@@ -26,11 +26,11 @@ const CallToAction = () => {
           fontWeight="extrabold"
           letterSpacing="tight"
           lineHeight="1.2"
-          color="blackAlpha.900"
+          color="gray.100"
         >
           Transform Your Brand with Us{" "}
         </Heading>
-        <Text fontSize="lg" maxW="xl" mx="auto" color="blackAlpha.900">
+        <Text fontSize="lg" maxW="xl" mx="auto" color="gray.200">
           Boost Your Business with Results-Driven Marketing Solutions: Your
           Trusted Partner for Online Success
         </Text>

@@ -10,13 +10,7 @@ import features from "./assets/features.svg";
 
 const FeatureImage = (props) => (
   <Box flex="1" {...props}>
-    <Img
-      objectFit="cover"
-      h="100%"
-      w="100%"
-      src={features}
-      alt="Our Services"
-    />
+    <Img h="100%" w="100%" src={features} alt="Our Services" />
   </Box>
 );
 
